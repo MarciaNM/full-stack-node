@@ -5,6 +5,7 @@
 			<br/>
 			<h6 class="text-secondary">Gerador de nomes utilizando Vue.js, GraphQL e Node</h6>
 		</div>
+		<helloWorld></helloWorld>
 		<div id="main">
 			<div class="container">
 				<div class="row">
@@ -89,9 +90,15 @@
 <script>
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
+import HelloWorld from "./components/HelloWorld";
+
 
 export default {
+  components: { HelloWorld },
 	name: "app",
+	comments: {
+		HelloWorld
+	},
 	data: function () {
 		return {
 			prefix: "",
